@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>home</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
+    <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/animated-form-in-a-modalbutton.css">
+    <link rel="stylesheet" href="css/Image_center.css">
+</head>
+
+<body style="background-color: rgb(128,128,128);">
+    <h2 class="text-center" style="color: rgb(255,255,255);">New Gate International Church, Inc<br></h2>
+    <div class="container"><img class="center" src="img/pic1.jpg">
+        <div id="emp" class="em">
+            <p class="text-center" style="height: -11px;"><em>221 Beaverwood Court</em><br></p>
+            <p class="text-center" style="height: -2px;"><em>Lawrenceville, Georgia 30044</em><br></p>
+            <p class="text-center"><em>770-921-7855</em><br></p>
+        </div><img class="center" src="img/temple.png" style="height: 70px;">
+        <h6 class="text-center"><strong>VACATION Boot Camp REGISTRATION POLICY</strong><br></h6>
+        <h2 style="margin: 29px;">ELIGIBILITY FOR PARTICIPATION<br></h2>
+        <h5><strong>Requirements for the Elementary Program:</strong><br></h5>
+        <p><br>Children who have completed 3rd through 5th grade are eligible to participate in the VBC elementary program.<br></p>
+        <h5><strong>Language:</strong><br></h5>
+        <p>All children who attend must be able to communicate effectively in English. It is imperative that they are able to understand directions and express their needs. Foreign language interpretation is not available.<br><br></p>
+        <h4><strong>REGISTRATION PROCESS</strong><br></h4>
+        <h5><strong>Registration Form:</strong><br></h5>
+        <p>A completed registration form is required for each child attending VBC. The registration form must be completely filled out by the child’s parent or guardian prior to a child’s participation in VBC. Registration can be done via hardcopy or online
+            at www.newgateintl.org. Registration forms will be available in the church office.<br></p>
+        <h5><strong>Payment:</strong><br></h5>
+        <p>The cost of VBC, as indicated on the registration form, is $30 registration and $100 for the week. Registration is non-refundable and both registration and Camp costs must be paid prior to attending the class. This helps to cover some of the expenses
+            that New Gate International Church incurs to host VBC each summer. In order to be fully registered, the registrar must receive payment either by check (made out to New Gate International Church), credit/debit card, or cash. Online credit/debit
+            card payment can be made at www.newgateintl.org.<br></p>
+        <h5><strong>Payment for a Partial Week:</strong><br></h5>
+        <p>Children are highly encouraged to attend the full week of VBC. Each day is important as the children build relationships with others in their crews. The cost per child for New Gate International Church is not divided up into daily amounts; it
+            is an overall expense thus no discount is offered for children who only attend for a partial week.<br></p>
+        <h5><strong>Scholarships:</strong><br></h5>
+        <p>A child’s spiritual formation is extremely important, however at this time New Gate International Church is not able to offer scholarships. We do plan on a having a scholarship program possibly in 2021.<br><br>New Gate International Church<br></p>
+        <div
+            class="text-center"><button class="btn btn-primary" type="button" id="modal-btn" data-toggle="modal" data-target="#signmodal"> Register Here </button>
+ <div class="modal" id="signmodal" >
+      <div class="container" id="container">
+	<div class="row">
+		<form action="mail_handler.php" method="post" name="form" class="form-box">
+                        <div class="col-md-12">
+                            <label>Child’s Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>(Last)</label>
+                                <br>
+                            <input class="form-control" name="child_name_last" required="name">
+                        </div>
+                        <div class="col-md-6">
+                            <label>(First)</label><br>
+                            <input class="form-control" name="child_name_first" required="name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label>Age</label>
+                                <br>
+                            <input class="form-control" name="age" required="age">
+                        </div>
+                        <div class="col-md-4">
+                            <label>Date of Birth</label><br>
+                            <input class="form-control" name="dob">
+                        </div>
+                        <div class="col-md-5">
+                            <label>Grade (as of Spring 2020)</label><br>
+                            <input class="form-control" name="grade">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Address</label>
+                                <br>
+                            <input class="form-control" name="address" required="Address">
+                        </div>
+                        <div class="col-md-4">
+                            <label>City/St</label><br>
+                            <input class="form-control" name="city" required="City">
+                        </div>
+                        <div class="col-md-2">
+                            <label>Zip</label><br>
+                            <input class="form-control" name="zipcode" required="Zip">
+                        </div>
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>Parent’s Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>(Last)</label>
+                                <br>
+                            <input class="form-control" name="parents_name_last" required="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label>(First)</label><br>
+                            <input class="form-control" name="parents_name_first" required="Name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Home Phone # </label>
+                                <br>
+                            <input class="form-control" name="home_phone" required="Phone">
+                        </div>
+                        <div class="col-md-6">
+                            <label>E-mail</label><br>
+                            <input class="form-control" name="email" required="E-mail">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Parent’s Cell # </label>
+                                <br>
+                            <input class="form-control" name="parents_cell">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Parent’s Work #</label><br>
+                            <input class="form-control" name="parents_work">
+                        </div>
+                    </div>
+
+
+                    <label>Does this child have any medical condition(s) that we should be aware of (allergies, medications, etc?) If so please explain.  </label>
+                    <textarea class="form-control" name="medical_condition"></textarea>
+
+                    <label>Dismissal & Emergency Contact Information <small>(To serve your child in case of ACCIDENT OR SUDDEN ILLNESS)</small></label>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>1. Name </label>
+                                <br>
+                            <input class="form-control" name="emrgncy_name1">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Phone #</label><br>
+                            <input class="form-control" name="emrgncy_contact1">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>2c. Name </label>
+                                <br>
+                            <input class="form-control" name="emrgncy_name2">
+                        </div>
+                        <div class="col-md-6">
+                            <label>Phone #</label><br>
+                            <input class="form-control" name="emrgncy_contact2">
+                        </div>
+                    </div>
+                    <p>T-shirt size: (Please circle one) <u>CHILD</u> XS SM MED LRG <u>ADULT</u> SM MED LRG XL XXL<br>
+                    Siblings who will also be attending VBC</p>
+                    <input class="form-control" name="vbc">
+                    <label>Permission granted to photograph/video and release images. (Please circle one) Yes No<br></label> 
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>I would like to volunteer to help with</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control" name="volunteer">
+                        </div>
+                    </div>
+                    
+                    
+                    <label>Church use only/Other Information</label>
+                    <textarea class="form-control" name="other Information"></textarea>
+                    <br>
+                    <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3>MEDICAL AUTHORIZATION</h3>
+                            </div>
+                        </div>
+                        <br>
+                    <p>I, <input type="text" class="frmvn" > , being the parent/legal guardian and having 
+                    legal custody of  <input type="text" class="frmvn"> ,  a minor, do hereby consent 
+to said child participating in activities and related trips of New Gate International Church, Inc. I do hereby release, discharge and exonerate New Gate International Church, Inc. and all persons acting as teachers or sponsors on said activities and trips from any liability whatsoever resulting from personal injury to said minor or damage to property of said minor which may occur at said activities or trips or connection therewith. I do hereby certify that I assume full responsibility and liability for any acts committed by said minor during activities, and trips related thereto resulting in injury or damage to the property of another. I do hereby acknowledge that I understand that this release is being relied upon by New Gate International Church, Inc. and teachers or sponsors accompanying the children on said trips and activities; and without this instrument being executed by me, said minor would not be permitted to attend field trips nor engage in activities related thereto. I, do hereby authorize the officials of New Gate International Church, Inc. to contact directly the person named in this authorization, and do authorize <div class="row">
+    <div class="col-md-5">
+        <input type="text" class="form-control">
+        (Physician)
+    </div>
+    <div class="col-md-2 text-center">
+        OR
+    </div>
+    <div class="col-md-5">
+        <input type="text" class="form-control">
+        (Hospital)
+    </div>
+</div>   
+<br>to render such treatment as may be deemed necessary in an emergency, for the health of said child. In the event physicians, other persons named in the authorization or parents cannot be contacted, the church officials are hereby authorized to take whatever action is deemed necessary in their judgment, for the health of the aforesaid child. I will not hold New Gate International Church, Inc. financially responsible for the emergency care and/or transportation for said child.
+<div class="row">
+                        <div class="col-md-6"><label>Parent/Guardian Signature:</label> <input type="text" class="form-control" name=""></div>
+                        <div class="col-md-6"><label>Date:</label> <input type="text" class="form-control" name="" ></div>
+                    </div>
+                    <br>
+            <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3>NOTICE OF PROGRAM LICENSING AND INSURANCE</h3>
+                            </div>
+                        </div>
+                    <p>
+                    Dear Parents,<br>
+                    This letter is to inform you that the New Gate International Church’s Vacation BOOT CAMP is not a State of Georgia licensed program; however, we are listed as a Vacation BOOT CAMP.  We would like to also inform you that New Gate International Church Inc. does have a General Liability Insurance Policy under its name. <br>
+Please sign below to acknowledge that you do understand that statements made above. <br> 
+
+                    <div class="row">
+                        <div class="col-md-6"><label>Childs Name</label> 
+                            <input type="text" class="form-control" name=""></div>
+                        <div class="col-md-6"><label>Date</label> <input type="text" class="form-control" name="" ></div>
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="col-md-6"><label>Name</label> <input type="text" class="form-control" name=""></div>
+                        <div class="col-md-6"><label>Date</label> <input type="text" class="form-control" name="" ></div>
+                    </div>
+                    <input type="submit" name="submit" value="Submit" class="sub-btn">
+                    <input type="reset" value="Reset" name="reset">
+                    </form>
+                </div>
+            </div>
+        </div>
+</div>
+
+    </div></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <script src="js/animated-form-in-a-modalbutton.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body{
+  background-color:lightgrey;
+  color:black;
+}
+
+.form{
+    background: white;
+    padding: 15px 35px;
+    border-radius: 7px;
+    color:black;
+    margin-bottom: 10px;
+}
+
+h1{
+  font-weight: bold;
+}
+
+.txth{
+    text-decoration: underline;
+    color: black !important;
+}
+
+.txth a{
+    color: black;
+}
+
+label{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.frmvn{
+    margin-top: 5px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
